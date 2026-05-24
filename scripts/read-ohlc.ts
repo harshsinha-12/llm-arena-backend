@@ -4,7 +4,7 @@ import { getRedisClient } from "../redis/personal";
 import { ohlcKey } from "../config/redis";
 dotenv.config();
 
-async function readOHLC(mbCode: MBCode) {
+export async function readOHLC(mbCode: MBCode) {
     const client = await getRedisClient();
     try {
         const key = ohlcKey(mbCode, "1Y");
@@ -21,4 +21,4 @@ async function readOHLC(mbCode: MBCode) {
     }
 }
 
-readOHLC("MBEQU5710").catch(console.error);
+// readOHLC("MBEQU5710").catch(console.error);
