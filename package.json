@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "play": "ts-node scripts/playground.ts"
+    "play": "ts-node scripts/playground.ts",
+    "arena": "ts-node scripts/run-arena.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/genai": "^2.7.0",
     "@types/node": "^25.2.3",
     "axios": "^1.13.5",
     "date-fns": "^4.1.0",
